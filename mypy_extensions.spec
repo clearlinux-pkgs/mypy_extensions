@@ -4,7 +4,7 @@
 #
 Name     : mypy_extensions
 Version  : 0.4.3
-Release  : 10
+Release  : 11
 URL      : https://files.pythonhosted.org/packages/63/60/0582ce2eaced55f65a4406fc97beba256de4b7a95a0034c6576458c6519f/mypy_extensions-0.4.3.tar.gz
 Source0  : https://files.pythonhosted.org/packages/63/60/0582ce2eaced55f65a4406fc97beba256de4b7a95a0034c6576458c6519f/mypy_extensions-0.4.3.tar.gz
 Summary  : Experimental type system extensions for programs checked with the mypy typechecker.
@@ -18,11 +18,10 @@ BuildRequires : buildreq-distutils3
 BuildRequires : typing
 
 %description
-Mypy Extensions
 ===============
-
-The "mypy_extensions" module defines experimental extensions to the
-standard "typing" module that are supported by the mypy typechecker.
+        
+        The "mypy_extensions" module defines experimental extensions to the
+        standard "typing" module that are supported by the mypy typechecker.
 
 %package license
 Summary: license components for the mypy_extensions package.
@@ -45,7 +44,7 @@ python components for the mypy_extensions package.
 Summary: python3 components for the mypy_extensions package.
 Group: Default
 Requires: python3-core
-Provides: pypi(mypy-extensions)
+Provides: pypi(mypy_extensions)
 
 %description python3
 python3 components for the mypy_extensions package.
@@ -60,8 +59,7 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C.UTF-8
-export SOURCE_DATE_EPOCH=1583185338
-# -Werror is for werrorists
+export SOURCE_DATE_EPOCH=1583521530
 export GCC_IGNORE_WERROR=1
 export CFLAGS="$CFLAGS -fno-lto "
 export FCFLAGS="$CFLAGS -fno-lto "
