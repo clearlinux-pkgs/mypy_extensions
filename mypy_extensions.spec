@@ -4,7 +4,7 @@
 #
 Name     : mypy_extensions
 Version  : 0.4.3
-Release  : 11
+Release  : 12
 URL      : https://files.pythonhosted.org/packages/63/60/0582ce2eaced55f65a4406fc97beba256de4b7a95a0034c6576458c6519f/mypy_extensions-0.4.3.tar.gz
 Source0  : https://files.pythonhosted.org/packages/63/60/0582ce2eaced55f65a4406fc97beba256de4b7a95a0034c6576458c6519f/mypy_extensions-0.4.3.tar.gz
 Summary  : Experimental type system extensions for programs checked with the mypy typechecker.
@@ -13,9 +13,7 @@ License  : MIT
 Requires: mypy_extensions-license = %{version}-%{release}
 Requires: mypy_extensions-python = %{version}-%{release}
 Requires: mypy_extensions-python3 = %{version}-%{release}
-Requires: typing
 BuildRequires : buildreq-distutils3
-BuildRequires : typing
 
 %description
 ===============
@@ -59,11 +57,11 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C.UTF-8
-export SOURCE_DATE_EPOCH=1583521530
+export SOURCE_DATE_EPOCH=1588359972
 export GCC_IGNORE_WERROR=1
 export CFLAGS="$CFLAGS -fno-lto "
-export FCFLAGS="$CFLAGS -fno-lto "
-export FFLAGS="$CFLAGS -fno-lto "
+export FCFLAGS="$FFLAGS -fno-lto "
+export FFLAGS="$FFLAGS -fno-lto "
 export CXXFLAGS="$CXXFLAGS -fno-lto "
 export MAKEFLAGS=%{?_smp_mflags}
 python3 setup.py build
